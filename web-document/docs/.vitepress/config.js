@@ -3,7 +3,8 @@ module.exports = {
   description: 'Just playing around.',
   themeConfig: {
     repo: 'KoichiKiyokawa/rhodash',
-    docsDir: 'web-document/docs', // has bug, branch name cannot set as `main1`
+    docsDir: 'web-document/docs',
+    docsBranch: 'main',
 
     editLinks: true,
     editLinkText: 'Edit this page on GitHub',
