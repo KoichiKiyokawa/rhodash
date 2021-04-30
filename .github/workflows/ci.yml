@@ -21,6 +21,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: install dependencies
         run: npm ci
+      - name: lint
+        run: npm run lint:ci
       - name: test
         run: npm test
       - name: Codecov Node

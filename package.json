@@ -11,6 +11,7 @@
   "scripts": {
     "build": "rimraf dist && rollup -c",
     "lint": "prettier --write . --ignore-path .gitignore && eslint --fix . --ignore-path .gitignore",
+    "lint:ci": "prettier --check . --ignore-path .gitignore && eslint . --ignore-path .gitignore",
     "test": "jest --coverage"
   },
   "keywords": [],
