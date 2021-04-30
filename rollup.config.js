@@ -10,7 +10,13 @@ const options = {
     sourcemap: true,
   },
 
-  plugins: [typescript({ declaration: true, declarationDir: "dist" })],
+  plugins: [
+    typescript({
+      declaration: true,
+      declarationDir: "dist",
+      include: "src/**/*.ts",
+    }),
+  ],
 };
 
 export default options;
