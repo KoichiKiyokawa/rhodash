@@ -1,8 +1,13 @@
-import { pick } from "../src/index";
+import { last } from "../src/index";
 
 describe("default use case", () => {
-  it("pick 2 keys", () => {
-    const result = pick({ a: 1, b: 2, c: 3 }, ["a", "b"]);
-    expect(result).toEqual({ a: 1, b: 2 });
+  it("get 3 in last of [1, 2, 3]", () => {
+    const result = last([1, 2, 3]);
+    expect(result).toEqual(3);
+  });
+
+  it("get undefined if empty array", () => {
+    const result = last([]);
+    expect(result).toBeUndefined();
   });
 });
