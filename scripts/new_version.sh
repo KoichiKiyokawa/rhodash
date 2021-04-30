@@ -8,7 +8,9 @@ elif [ $# -ge 2 ]; then
 fi
 sed -i "" -e "s/\"version\": \".*\"/\"version\": \"${1}\"/" package.json &&
 npm install &&
+npm run build &&
 git add package.json package-lock.json &&
 git commit -m "v${1}" &&
 git tag "v${1}" HEAD -f &&
 echo "push by below command:\ngit push --tags"
+echo "publish this package by below command:\nnpm publish"
