@@ -1,4 +1,4 @@
-import { countBy } from '../src/countBy'
+import { countBy } from '../src/index'
 
 describe('default use case', () => {
   it('countup even items', () => {
