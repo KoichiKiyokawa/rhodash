@@ -6,7 +6,8 @@
   "module": "dist/index.js",
   "files": [
     "package.json",
-    "dist"
+    "dist",
+    "src"
   ],
   "repository": {
     "type": "git",
