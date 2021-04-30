@@ -16,6 +16,7 @@
 - 💪 Typescript first(written in TypeScript and suitable for TypeScript user)
 - <img src=https://static.npmjs.com/255a118f56f5346b97e56325a1217a16.svg height=18 /> Includes type definitions
 - 🍃 Tree shakable
+- 🗺️ Sourcemap is available (easy to debug).
 
 ## Install
 
