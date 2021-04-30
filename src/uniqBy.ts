@@ -1,7 +1,4 @@
-export function uniqBy<T, K>(
-  array: readonly T[],
-  predicate: (arg: T) => K
-): T[] {
+export function uniqBy<T, K>(array: readonly T[], predicate: (arg: T) => K): T[] {
   const addedKeySet = new Set<K>()
   const result = []
   for (const item of array) {
