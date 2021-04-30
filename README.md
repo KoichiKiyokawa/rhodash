@@ -25,6 +25,17 @@ npm install rhodash
 # or yarn install rhodash
 ```
 
+## Usage
+
+```ts
+import { pick, omit } from "rhodash";
+
+pick({ a: 1, b: 2, c: 3 }, ["a", "b"]); // { a: 1, b: 2 }
+omit({ a: 1, b: 2, c: 3 }, ["a", "b"]); // { c: 3 }
+```
+
+You can see utility methods list [here](https://github.com/KoichiKiyokawa/rhodash/tree/main/src)
+
 ## Comparison
 
 ### [Lodash](https://github.com/lodash/lodash)
