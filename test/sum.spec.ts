@@ -6,3 +6,10 @@ describe("default use case", () => {
     expect(result).toBe(6);
   });
 });
+
+describe("edge case", () => {
+  it("sum [] is 0", () => {
+    const result = sum([]);
+    expect(result).toBe(0);
+  });
+});
