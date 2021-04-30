@@ -8,6 +8,10 @@
     "package.json",
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KoichiKiyokawa/rhodash"
+  },
   "scripts": {
     "prepare": "husky install",
     "build": "rimraf dist && rollup -c",
@@ -15,8 +19,11 @@
     "lint:ci": "prettier --check . --ignore-path .gitignore && eslint . --ignore-path .gitignore",
     "test": "jest --coverage"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "lodash",
+    "utility-library"
+  ],
+  "author": "K.Kiyokawa",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.1",

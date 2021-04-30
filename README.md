@@ -13,7 +13,7 @@
 
 - 🚀 No dependencies
 - ⚡️ Lightweight
-- ✏ Less code
+- ✏️ Less code
 - 💪 Typescript first(Written in TypeScript)
 - <img src=https://static.npmjs.com/255a118f56f5346b97e56325a1217a16.svg height=18 /> Includes type definitions
 - 🍃 Tree shakable
