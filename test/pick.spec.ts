@@ -1,4 +1,4 @@
-import { pick } from "../src/pick";
+import { pick } from "../src/index";
 
 describe("default use case", () => {
   it("pick 2 keys", () => {

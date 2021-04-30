@@ -1,4 +1,4 @@
-import { omit } from "../src/omit";
+import { omit } from "../src/index";
 
 describe("default use case", () => {
   it("omit 2 keys", () => {

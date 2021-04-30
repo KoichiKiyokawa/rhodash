@@ -1,4 +1,4 @@
-import { sum } from "../src/sum";
+import { sum } from "../src/index";
 
 describe("default use case", () => {
   it("sum [1, 2, 3] is 6", () => {
