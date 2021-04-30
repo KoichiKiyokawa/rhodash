@@ -1,14 +1,14 @@
-import typescript from "@rollup/plugin-typescript";
+import typescript from '@rollup/plugin-typescript'
 
 /** @type {import('rollup').RollupOptions} */
 const options = {
-  input: "src/index.ts",
+  input: 'src/index.ts',
   output: [
-    { file: "dist/index.cjs", format: "cjs" },
+    { file: 'dist/index.cjs', format: 'cjs' },
     {
-      dir: "dist",
-      format: "es",
-      exports: "named",
+      dir: 'dist',
+      format: 'es',
+      exports: 'named',
       sourcemap: true,
     },
   ],
@@ -16,10 +16,10 @@ const options = {
   plugins: [
     typescript({
       declaration: true,
-      declarationDir: "dist",
-      include: "src/**/*.ts",
+      declarationDir: 'dist',
+      include: 'src/**/*.ts',
     }),
   ],
-};
+}
 
-export default options;
+export default options
