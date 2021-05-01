@@ -8,8 +8,8 @@ const options = {
     {
       dir: 'dist',
       format: 'es',
-      exports: 'named',
       sourcemap: true,
+      preserveModules: true,
     },
   ],
 
