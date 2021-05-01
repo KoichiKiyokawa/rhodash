@@ -12,4 +12,4 @@ npm run build &&
 git add package.json package-lock.json &&
 git commit -m "v${1}" &&
 git tag "v${1}" HEAD -f &&
-echo "push by below command:\n $ git push --tags && npm publish"
+echo "push by below command:\n $ git push origin --tags && npm publish"
