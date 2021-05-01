@@ -4,7 +4,7 @@
  *   { id: 1, name: 'user1' },
  *   { id: 1, name: 'user2' },
  *   { id: 2, name: 'user3' },
- * ])
+ * ], user => user.id)
  * // [{ id: 1, name: 'user1' }, { id: 2, name: 'user3' }]
  */
 export function uniqBy<T, K>(array: readonly T[], predicate: (arg: T) => K): T[] {
