@@ -1,6 +1,7 @@
 export { countBy } from './countBy'
 export { delay } from './delay'
 export { last } from './last'
+export { objectDifference } from './objectDifference'
 export { omit } from './omit'
 export { partition } from './partition'
 export { pick } from './pick'
