@@ -1,9 +1,9 @@
 /**
  * @example
  * const users = [
- *    { age: 1, name: 'user1' },
- *    { age: 2, name: 'user2' },
- *    { age: 3, name: 'user3' },
+ *   { age: 1, name: 'user1' },
+ *   { age: 2, name: 'user2' },
+ *   { age: 3, name: 'user3' },
  * ]
  * sumBy(users, user => user.age) // 6
  * sumBy(users, 'age') // 6
