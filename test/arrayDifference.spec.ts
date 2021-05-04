@@ -1,6 +1,10 @@
 import { arrayDifference } from '../src/index'
 
 describe('default use case', () => {
+  it('normal array target contains all of other', () => {
+    expect(arrayDifference([1, 2, 3], [2, 3])).toEqual([1])
+  })
+
   it('normal array', () => {
     expect(arrayDifference([1, 2, 3], [2, 3, 4])).toEqual([1])
   })
