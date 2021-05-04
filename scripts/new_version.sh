@@ -12,4 +12,5 @@ npm run build &&
 git add package.json package-lock.json &&
 git commit -m "v${1}" &&
 git tag "v${1}" HEAD -f &&
+echo "Do not forget to replace version in README if needed."
 echo "push by below command:\n $ git push origin --tags && npm publish"

@@ -27,11 +27,22 @@ npm install rhodash
 
 ## Usage
 
+### ES Module
+
 ```ts
 import { pick, omit } from 'rhodash'
 
 pick({ a: 1, b: 2, c: 3 }, ['a', 'b']) // { a: 1, b: 2 }
 omit({ a: 1, b: 2, c: 3 }, ['a', 'b']) // { c: 3 }
+```
+
+### Browser
+
+```html
+<script src="https://unpkg.com/rhodash@1.1.0"></script>
+<script>
+  document.write(rhodash.pick({ a: 1, b: 2, c: 3 }, ['a', 'b']))
+</script>
 ```
 
 You can see utility methods list [here](https://github.com/KoichiKiyokawa/rhodash/tree/main/src)
