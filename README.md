@@ -22,7 +22,7 @@
 
 ```sh
 npm install rhodash
-# or yarn install rhodash
+# or yarn add rhodash
 ```
 
 ## Usage
@@ -44,6 +44,8 @@ omit({ a: 1, b: 2, c: 3 }, ['a', 'b']) // { c: 3 }
   document.write(rhodash.pick({ a: 1, b: 2, c: 3 }, ['a', 'b']))
 </script>
 ```
+
+## API
 
 You can see utility methods list [here](https://github.com/KoichiKiyokawa/rhodash/tree/main/src)
 
