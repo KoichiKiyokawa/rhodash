@@ -13,7 +13,7 @@
 
 - 🚀 No dependencies
 - ⚡️ Lightweight
-- 💪 Typescript first(written in TypeScript and suitable for TypeScript user)
+- 💪 Typescript first(written in TypeScript and suitable for TypeScript users)
 - <img src=https://static.npmjs.com/255a118f56f5346b97e56325a1217a16.svg height=18 /> Includes type definitions
 - 🍃 Tree shakable
 - 🗺️ Sourcemap is available (easy to debug).
@@ -39,7 +39,7 @@ omit({ a: 1, b: 2, c: 3 }, ['a', 'b']) // { c: 3 }
 ### Browser
 
 ```html
-<script src="https://unpkg.com/rhodash@1.1.0"></script>
+<script src="https://unpkg.com/rhodash@1.1.1"></script>
 <script>
   document.write(rhodash.pick({ a: 1, b: 2, c: 3 }, ['a', 'b']))
 </script>
