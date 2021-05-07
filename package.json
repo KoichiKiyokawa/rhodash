@@ -21,7 +21,8 @@
     "build": "rimraf dist && rollup -c",
     "lint": "prettier --write . --ignore-path .gitignore && eslint --fix . --ignore-path .gitignore",
     "lint:ci": "prettier --check . --ignore-path .gitignore && eslint . --ignore-path .gitignore",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "new_version": "zx scripts/new_version.mjs"
   },
   "keywords": [
     "lodash",
@@ -45,7 +46,8 @@
     "rollup-plugin-terser": "^7.0.2",
     "ts-jest": "^26.5.5",
     "ts-node": "^9.1.1",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "zx": "^1.0.2"
   },
   "volta": {
     "node": "16.0.0",
