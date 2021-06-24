@@ -39,7 +39,7 @@ omit({ a: 1, b: 2, c: 3 }, ['a', 'b']) // { c: 3 }
 ### Browser
 
 ```html
-<script src="https://unpkg.com/rhodash@1.2.0"></script>
+<script src="https://unpkg.com/rhodash@1.3.0"></script>
 <script>
   document.write(rhodash.pick({ a: 1, b: 2, c: 3 }, ['a', 'b']))
 </script>
