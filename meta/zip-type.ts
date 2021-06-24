@@ -3,8 +3,8 @@ import { toRange } from '../src'
 /**
  * generate following type definition
  * ```
- * export function zip<T1, T2>(array1: T1, array2: T2): (T1 | T2)[][]
- * export function zip<T1, T2, T3>(array1: T1, array2: T2, array3: T3): (T1 | T2 | T3)[][]
+ * export function zip<T1, T2>(array1: readonly T1[], array2: readonly T2[]): (T1 | T2)[][]
+ * export function zip<T1, T2, T3>(array1: readonly T1[], array2: readonly T2[], array3: readonly T3[]): (T1 | T2 | T3)[][]
  * ...
  * ```
  */
