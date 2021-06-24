@@ -22,7 +22,8 @@
     "lint": "prettier --write . --ignore-path .gitignore && eslint --fix . --ignore-path .gitignore",
     "lint:ci": "prettier --check . --ignore-path .gitignore && eslint . --ignore-path .gitignore",
     "test": "jest --coverage",
-    "new_version": "zx scripts/new_version.ts"
+    "new_version": "zx scripts/new_version.ts",
+    "run-ts": "ts-node -O '{\"module\":\"commonjs\"}'"
   },
   "keywords": [
     "lodash",
