@@ -5,13 +5,13 @@ import 'zx'
     process.exit(1)
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_node, _zx, _file, newVersion, ...others] = process.argv
   if (others.length > 0) error('too much args')
   if (newVersion == null) error('please input new version. e.g. 1.0.0')
 
   // update package.json
   const pkg = JSON.parse(await (await fs.readFile('package.json')).toString())
-  const beforeVersion = pkg.version
   pkg.version = newVersion
   await fs.writeFile('package.json', JSON.stringify(pkg))
   await $`npx prettier --write package.json`
