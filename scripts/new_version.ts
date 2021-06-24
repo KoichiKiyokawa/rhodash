@@ -33,6 +33,5 @@ import 'zx'
   await $`git commit -m "v${newVersion}"`
   await $`git tag "v${newVersion}" HEAD -f`
 
-  console.log('Do not forget to replace version in README if needed.')
   console.log(`push by below command:\n ${chalk.green('$ git push origin --tags && npm publish')}`)
 })()
