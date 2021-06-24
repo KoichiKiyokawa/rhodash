@@ -7,7 +7,7 @@ export function omit<T extends Record<string, unknown>, K extends keyof T>(
 ): Omit<T, K> {
   const result = {} as Record<string, unknown>
   for (const key in object) {
-    if (!keys.includes((key as unknown) as K)) {
+    if (!keys.includes(key as unknown as K)) {
       result[key as string] = object[key]
     }
   }
