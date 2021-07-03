@@ -1,5 +1,3 @@
-import { ObjectOrClassInstance } from '../types/object-or-class-instance'
-
 /**
  * @example omit({ a: 1, b: 2, c: 3 }, ["a", "b"]) // { c: 3 }
  */
