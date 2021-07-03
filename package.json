@@ -1,6 +1,6 @@
 {
   "name": "rhodash",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "A deadly simple alternative to lodash",
   "types": "dist/index.d.ts",
   "main": "dist/index.cjs",
