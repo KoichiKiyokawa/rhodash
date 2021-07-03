@@ -1,3 +1,5 @@
+import { ObjectOrClassInstance } from './types/object-or-class-instance'
+
 /**
  * create an object that contains keys not included in the other given object, using `===` string equal.
  * Be careful, not support for nested objects.

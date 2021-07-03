@@ -31,7 +31,7 @@ async function isAllTestFileValid() {
 async function isAllFunctionHasExample() {
   const files = await promisify(fs.readdir)('./src')
   for (const file of files) {
-    if (file === 'index.ts') continue
+    if (file === 'index.ts' || file === 'types') continue
 
     const text = String(fs.readFileSync(`./src/${file}`))
     if (!/@example/.test(text)) return `lack of example: ${file}`
