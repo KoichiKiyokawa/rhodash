@@ -22,12 +22,12 @@ describe('start > end', () => {
     const result = range(5, 1)
     expect(result).toEqual([5, 4, 3, 2])
   })
+})
 
-  describe('start = end', () => {
-    it('range(5, 5) is []', () => {
-      const result = range(5, 5)
-      expect(result).toEqual([])
-    })
+describe('start = end', () => {
+  it('range(5, 5) is []', () => {
+    const result = range(5, 5)
+    expect(result).toEqual([])
   })
 })
 
