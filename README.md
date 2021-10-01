@@ -39,6 +39,15 @@ pick({ a: 1, b: 2, c: 3 }, ['a', 'b']) // { a: 1, b: 2 }
 omit({ a: 1, b: 2, c: 3 }, ['a', 'b']) // { c: 3 }
 ```
 
+### CommonJS
+
+```ts
+const { pick, omit } = require('rhodash')
+
+pick({ a: 1, b: 2, c: 3 }, ['a', 'b']) // { a: 1, b: 2 }
+omit({ a: 1, b: 2, c: 3 }, ['a', 'b']) // { c: 3 }
+```
+
 ### Browser
 
 ```html
