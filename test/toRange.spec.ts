@@ -32,13 +32,13 @@ describe('start = end', () => {
 })
 
 describe('edge case', () => {
-  it('toRange(1, 5, 0) is [1, 1, 1, 1]', () => {
+  it('toRange(1, 5, 0) is [1, 1, 1, 1, 1]', () => {
     const result = toRange(1, 5, 0)
     expect(result).toEqual([1, 1, 1, 1, 1])
   })
 
   it('toRange(5, 1, 0) is [5, 5, 5, 5, 5]', () => {
-    const result = toRange(1, 5, 0)
-    expect(result).toEqual([1, 1, 1, 1, 1])
+    const result = toRange(5, 1, 0)
+    expect(result).toEqual([5, 5, 5, 5, 5])
   })
 })

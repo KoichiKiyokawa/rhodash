@@ -38,8 +38,8 @@ describe('edge case', () => {
   })
 
   it('range(5, 1, 0) is [5, 5, 5, 5]', () => {
-    const result = range(1, 5, 0)
-    expect(result).toEqual([1, 1, 1, 1])
+    const result = range(5, 1, 0)
+    expect(result).toEqual([5, 5, 5, 5])
   })
 
   it('range(5, 5, 0) is []', () => {
