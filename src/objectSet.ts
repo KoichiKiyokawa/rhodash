@@ -10,9 +10,9 @@
  * // merge objects
  * objectSet({ a: 1 }, 'a.b', 2) // => { a: { b: 2 } }
  */
-export function objectSet<T>(obj: any, path: string, value: unknown): T {
+export function objectSet<T = any>(obj: T, path: string, value: unknown): T {
   const keys = path.split(/\[|\]|\./).filter(Boolean)
-  let current = obj
+  let current: any = obj
   for (let i = 0; i < keys.length; i++) {
     const key = isEmptyQuote(keys[i]) ? '' : keys[i]
     // for merge objects like: objectSet({ a: 1 }, 'a.b', 2) eq { a: { b: 2 } }
@@ -26,7 +26,7 @@ export function objectSet<T>(obj: any, path: string, value: unknown): T {
       current[key] = value
     }
   }
-  return obj as T
+  return obj
 }
 
 function isNumberString(str: string): boolean {
