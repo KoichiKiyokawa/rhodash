@@ -38,7 +38,7 @@ describe('edge case', () => {
   it('path is an empty string', () => {
     expect(objectSet({}, '', 1)).toEqual({})
   })
-  it(`cannot set object path to an array`, () => {
+  it(`set object path to an array`, () => {
     const result: any = objectSet([], 'a.b', 1)
     expect(Array.isArray(result)).toBe(true)
     expect(result['a']).toEqual({ b: 1 })
