@@ -1,4 +1,4 @@
-import 'zx'
+import 'zx/globals'
 ;(async function () {
   const error = (msg: string) => {
     console.error(chalk.red(msg))
