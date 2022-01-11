@@ -15,7 +15,9 @@ npm install rhodash
 
 ### arrayDifference
 
-Create an array that contains values not included in the other given array, using `===` string equal.
+Create an array that contains values not included in the other given array, using `===` string equal.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/arrayDifference.ts)
+
 **API**
 
 ```ts
@@ -30,7 +32,8 @@ arrayDifference([1, 2, 3], [2, 3]) // => [1]
 
 ### chunk
 
-For a given sequence, divide it into chunks of a given size and group them into arrays.
+For a given sequence, divide it into chunks of a given size and group them into arrays.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/chunk.ts)
 
 **API**
 
@@ -46,7 +49,8 @@ chunk([1, 2, 3, 4, 5], 3) // => [[1, 2, 3], [4, 5]]
 
 ### countBy
 
-Count the number of elements that match a given condition.
+Count the number of elements that match a given condition.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/countBy.ts)
 
 **API**
 
@@ -62,7 +66,8 @@ declare function countBy([1, 2, 3, 4, 5], (x) => x % 2 === 0) // => 2
 
 ### delay
 
-Return a Promise to be resolved in the given millisecond.
+Return a Promise to be resolved in the given millisecond.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/delay.ts)
 
 **API**
 
@@ -78,7 +83,8 @@ await delay(1000) // wait 1000ms
 
 ### last
 
-Return the last element of the given array.
+Return the last element of the given array.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/last.ts)
 
 **API**
 
@@ -94,7 +100,8 @@ last([1, 2, 3]) // => 3
 
 ### objectDifference
 
-Create an object that contains keys not included in the other given object, using `===` string equal. (Be careful, not support for nested objects.)
+Create an object that contains keys not included in the other given object, using `===` string equal. (Be careful, not support for nested objects.)  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/objectDifference.ts)
 
 **API**
 
@@ -110,7 +117,8 @@ objectDifference({ a: 1, b: 2 }, { a: 1, b: 0 }) // => { b: 2 }
 
 ### objectSet
 
-Sets the value at path of object.
+Sets the value at path of object.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/objectSet.ts)
 
 **API**
 
@@ -131,7 +139,8 @@ objectSet<{ a: number }, { a: { b: number } }>({ a: 1 }, 'a.b', 2)
 
 ### omit
 
-Create an object without the given properties. (Opposite of [pick](./#pick))
+Create an object without the given properties. (Opposite of [pick](./#pick))  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/omit.ts)
 
 **API**
 
@@ -150,7 +159,8 @@ omit({ a: 1, b: 2, c: 3 }, ['a', 'b']) // => { c: 3 }
 
 ### partition
 
-Split the given array into those that match the conditions and those that don't.
+Split the given array into those that match the conditions and those that don't.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/partition.ts)
 
 **API**
 
@@ -166,7 +176,8 @@ partition([1, 2, 3, 4, 5], (x) => x % 2 === 0) // => [[2, 4], [1, 3, 5]]
 
 ### pick
 
-Create an object composed of the picked object properties.
+Create an object composed of the picked object properties.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/pick.ts)
 
 **API**
 
@@ -185,7 +196,8 @@ pick({ a: 1, b: 2, c: 3 }, ['a', 'b']) // { a: 1, b: 2 }
 
 ### pickBy
 
-Create an object with only the properties that match the conditions.
+Create an object with only the properties that match the conditions.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/pickBy.ts)
 
 **API**
 
@@ -205,7 +217,8 @@ pickBy({ a: 1, b: 2, c: 3, d: 4 }, (num) => num % 2 === 0) // => { b: 2, d: 4 }
 
 ### range
 
-Create an array of sequential numbers without end values.
+Create an array of sequential numbers without end values.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/range.ts)
 
 **API**
 
@@ -223,7 +236,8 @@ range(0, 10, 2) // => [0, 2, 4, 6, 8]
 
 ### sum
 
-Add up the given array of numbers.
+Add up the given array of numbers.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/sum.ts)
 
 **API**
 
@@ -240,7 +254,8 @@ sum([]) // => 0
 
 ### sumBy
 
-Add up the given array of numbers, using the given function or key.
+Add up the given array of numbers, using the given function or key.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/sumBy.ts)
 
 **API**
 
@@ -265,7 +280,8 @@ sumBy(users, 'age') // => 6
 
 ### toRange
 
-Create an array of sequential numbers with end values.
+Create an array of sequential numbers with end values.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/toRange.ts)
 
 **API**
 
@@ -283,7 +299,8 @@ toRange(0, 10, 2) // => [0, 2, 4, 6, 8, 10]
 
 ### uniq
 
-Create an array with duplicate elements removed.
+Create an array with duplicate elements removed.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/uniq.ts)
 
 **API**
 
@@ -299,7 +316,8 @@ uniq([1, 2, 1, 1, 2, 3, 4]) // => [1, 2, 3, 4]
 
 ### uniqBy
 
-Create an array by removing duplicate elements from the result of the given function.
+Create an array by removing duplicate elements from the result of the given function.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/uniqBy.ts)
 
 **API**
 
@@ -323,7 +341,8 @@ uniqBy(
 
 ### zip
 
-Creates an array of grouped elements.
+Creates an array of grouped elements.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/zip.ts)
 
 **API**
 
@@ -339,7 +358,8 @@ zip([1, 2], ['a', 'b']) // => [[1, 'a'], [2, 'b']]
 
 ### zipObject
 
-Creates an object from array of keys and array of values.
+Creates an object from array of keys and array of values.  
+[source](https://github.com/KoichiKiyokawa/rhodash/blob/main/src/zipObject.ts)
 
 **API**
 
