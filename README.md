@@ -59,7 +59,7 @@ omit({ a: 1, b: 2, c: 3 }, ['a', 'b']) // { c: 3 }
 
 ## API
 
-You can see utility methods list [here](https://github.com/KoichiKiyokawa/rhodash/tree/main/src)
+You can see utility methods document [here](https://rhodash.vercel.app/).
 
 ## Comparison
 
