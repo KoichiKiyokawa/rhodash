@@ -1,6 +1,7 @@
 /**
- * Creates an Object from array of keys and array of values
- * @example zipObject(['a', 'b'], [1, 2]) // { a: 1, b: 2 }
+ * Creates an object from array of keys and array of values.
+ *
+ * @example zipObject(['a', 'b'], [1, 2]) // => { a: 1, b: 2 }
  */
 export function zipObject<K extends string | number | symbol, V>(
   keys: readonly K[],

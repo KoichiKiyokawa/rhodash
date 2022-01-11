@@ -1,5 +1,6 @@
 /**
  * Sets the value at path of object.
+ *
  * @param obj the object to modify
  * @param path e.g. 'a.b.c[0]'
  * @param value the value to assign
@@ -7,8 +8,10 @@
  * @example
  * objectSet({}, 'a.b.c[0]', 1) // => { a: { b: { c: [1] } } }
  * objectSet({}, 'a.b.c.0', 1) // => { a: { b: { c: [1] } } }
- * // merge objects
+ * // Merge objects
  * objectSet({ a: 1 }, 'a.b', 2) // => { a: { b: 2 } }
+ * // Use generics
+ * objectSet<{ a: number }, { a: { b: number } }>({ a: 1 }, 'a.b', 2)
  */
 export function objectSet<T = any, R = any>(obj: T, path: string, value: unknown): R {
   const keys = path.split(/\[|\]|\./).filter(Boolean)

@@ -1,5 +1,7 @@
 /**
- * @example partition([1, 2, 3, 4, 5], (x) => x % 2 === 0) // [[2, 4], [1, 3, 5]]
+ * Split the given array into those that match the conditions and those that don't.
+ *
+ * @example partition([1, 2, 3, 4, 5], (x) => x % 2 === 0) // => [[2, 4], [1, 3, 5]]
  */
 export function partition<T>(array: readonly T[], predicate: (arg: T) => boolean): [T[], T[]] {
   const yesList = []

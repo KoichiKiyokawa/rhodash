@@ -1,12 +1,14 @@
 /**
+ * Add up the given array of numbers, using the given function or key.
+ *
  * @example
  * const users = [
  *   { age: 1, name: 'user1' },
  *   { age: 2, name: 'user2' },
  *   { age: 3, name: 'user3' },
  * ]
- * sumBy(users, user => user.age) // 6
- * sumBy(users, 'age') // 6
+ * sumBy(users, user => user.age) // => 6
+ * sumBy(users, 'age') // => 6
  */
 export function sumBy<T extends Record<string, unknown>>(
   array: readonly T[],
