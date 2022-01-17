@@ -30,6 +30,8 @@ npm install rhodash
 
 ## Usage
 
+You can simply try [here](https://stackblitz.com/edit/typescript-ze7myy?file=index.ts).
+
 ### ES Module
 
 ```ts
