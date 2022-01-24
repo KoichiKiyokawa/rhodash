@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest'
 import { pickBy } from '../src/index'
 
 describe('default use case (omit callback)', () => {

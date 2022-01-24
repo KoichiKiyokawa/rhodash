@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest'
 import { objectSet } from '../src/index'
 
 describe('default use case', () => {

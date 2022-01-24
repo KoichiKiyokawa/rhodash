@@ -1,5 +1,6 @@
 import fs from 'fs'
 import { promisify } from 'util'
+import { describe, expect, it } from 'vitest'
 
 describe('file pattern', () => {
   it('test filename matches *.spec.ts', async () => {

@@ -19,9 +19,9 @@
   "scripts": {
     "prepare": "husky install",
     "build": "rimraf dist && rollup -c",
-    "lint": "prettier --write . --ignore-path .gitignore && eslint --fix . --ignore-path .gitignore",
-    "lint:ci": "prettier --check . --ignore-path .gitignore && eslint . --ignore-path .gitignore",
-    "test": "jest --coverage",
+    "lint": "prettier --write . && eslint --fix . --ignore-path .gitignore",
+    "lint:ci": "prettier --check . && eslint . --ignore-path .gitignore",
+    "test": "vitest --run --coverage",
     "new_version": "zx scripts/new_version.ts",
     "run-ts": "ts-node -O '{\"module\":\"commonjs\"}'"
   },
@@ -36,24 +36,25 @@
     "@types/jest": "27.4.0",
     "@typescript-eslint/eslint-plugin": "5.10.1",
     "@typescript-eslint/parser": "5.10.1",
+    "c8": "^7.11.0",
     "eslint": "8.5.0",
     "eslint-config-prettier": "8.3.0",
     "husky": "7.0.4",
-    "jest": "27.4.7",
     "lint-staged": "12.1.7",
     "prettier": "2.5.1",
     "rimraf": "3.0.2",
     "rollup": "2.61.1",
     "rollup-plugin-terser": "7.0.2",
-    "ts-jest": "27.1.2",
     "ts-node": "10.4.0",
     "typescript": "4.5.5",
+    "vite": "^2.7.13",
+    "vitest": "^0.2.0",
     "zx": "4.3.0"
   },
   "volta": {
-    "node": "16.3.0",
-    "npm": "7.18.1"
+    "node": "16.3.0"
   },
+  "packageManager": "pnpm@6.28.0",
   "lint-staged": {
     "**/*.{ts}": [
       "eslint --fix",
