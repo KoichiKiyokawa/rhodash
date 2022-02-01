@@ -14,12 +14,14 @@
 - 🚀 No dependencies
 - ⚡️ Lightweight
 - 💪 Typescript first(written in TypeScript and suitable for TypeScript users)
-- <img src=https://static.npmjs.com/255a118f56f5346b97e56325a1217a16.svg width=18 height=18 /> Includes type definitions
 - 🍃 Tree shakable
-- 🗺️ Sourcemap is available (easy to debug).
 - 📝 JSDoc available (easy to use).
 
 ![image](https://user-images.githubusercontent.com/40315079/135570757-ac335439-f7a5-4525-9d2b-e30d7990887f.png)
+
+- 🗺️ Sourcemap and declarationMap is available (You can jump to the TS file. Easy to debug).
+
+![jump-to-ts-file](https://user-images.githubusercontent.com/40315079/151918966-01c74eb4-c1bb-45bd-83d6-1c82b6a8e3b1.gif)
 
 ## Install
 
@@ -53,7 +55,7 @@ omit({ a: 1, b: 2, c: 3 }, ['a', 'b']) // { c: 3 }
 ### Browser
 
 ```html
-<script src="https://unpkg.com/rhodash@1.5.1"></script>
+<script src="https://unpkg.com/rhodash@1.6.0"></script>
 <script>
   document.write(rhodash.pick({ a: 1, b: 2, c: 3 }, ['a', 'b']))
 </script>
