@@ -22,7 +22,7 @@
 
 - 🗺️ Sourcemap and declarationMap is available (You can jump to the TS file. Easy to debug).
 
-![video](https://user-images.githubusercontent.com/40315079/151917552-8b9e715c-6be9-41d1-978b-09794365b934.mp4)
+https://user-images.githubusercontent.com/40315079/151917936-49cc6244-fdac-4f4f-8be4-37f3a806274a.mp4
 
 ## Install
 
