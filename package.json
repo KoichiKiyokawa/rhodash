@@ -3,9 +3,9 @@
   "version": "1.5.1",
   "description": "A deadly simple alternative to lodash",
   "types": "dist/index.d.ts",
-  "main": "dist/index.cjs",
-  "module": "dist/index.js",
-  "browser": "dist/index.min.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "browser": "dist/index.iife.js",
   "sideEffects": false,
   "files": [
     "package.json",
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "build": "rimraf dist && rollup -c",
+    "build": "vite build && tsc && zx scripts/write_banner.ts",
     "lint": "prettier --write . --ignore-path .gitignore && eslint --fix . --ignore-path .gitignore",
     "lint:ci": "prettier --check . --ignore-path .gitignore && eslint . --ignore-path .gitignore",
     "test": "jest --coverage",
@@ -32,7 +32,6 @@
   "author": "K.Kiyokawa",
   "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-typescript": "8.3.0",
     "@types/jest": "27.4.0",
     "@typescript-eslint/eslint-plugin": "5.10.1",
     "@typescript-eslint/parser": "5.10.1",
@@ -42,12 +41,10 @@
     "jest": "27.4.7",
     "lint-staged": "12.3.2",
     "prettier": "2.5.1",
-    "rimraf": "3.0.2",
-    "rollup": "2.61.1",
-    "rollup-plugin-terser": "7.0.2",
     "ts-jest": "27.1.3",
     "ts-node": "10.4.0",
     "typescript": "4.5.5",
+    "vite": "^2.7.13",
     "zx": "4.3.0"
   },
   "volta": {
