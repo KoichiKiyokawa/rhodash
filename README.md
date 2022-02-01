@@ -14,12 +14,15 @@
 - 🚀 No dependencies
 - ⚡️ Lightweight
 - 💪 Typescript first(written in TypeScript and suitable for TypeScript users)
-- <img src=https://static.npmjs.com/255a118f56f5346b97e56325a1217a16.svg width=18 height=18 /> Includes type definitions
 - 🍃 Tree shakable
-- 🗺️ Sourcemap is available (easy to debug).
+
 - 📝 JSDoc available (easy to use).
 
 ![image](https://user-images.githubusercontent.com/40315079/135570757-ac335439-f7a5-4525-9d2b-e30d7990887f.png)
+
+- 🗺️ Sourcemap and declarationMap is available (You can jump to the TS file. Easy to debug).
+
+![video](https://user-images.githubusercontent.com/40315079/151917552-8b9e715c-6be9-41d1-978b-09794365b934.mp4)
 
 ## Install
 
