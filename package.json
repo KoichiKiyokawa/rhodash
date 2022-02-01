@@ -18,7 +18,7 @@
   },
   "scripts": {
     "prepare": "husky install",
-    "build": "vite build",
+    "build": "vite build && tsc && zx scripts/write_banner.ts",
     "lint": "prettier --write . --ignore-path .gitignore && eslint --fix . --ignore-path .gitignore",
     "lint:ci": "prettier --check . --ignore-path .gitignore && eslint . --ignore-path .gitignore",
     "test": "jest --coverage",
