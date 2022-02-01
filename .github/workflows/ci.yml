@@ -19,17 +19,19 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 15.x, 16.x, 17.x]
+        node-version: [12.x, 14.x, 16.x, 17.x]
     steps:
       - uses: actions/checkout@v2
+      - run: corepack enable pnpm
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2.5.1
         with:
           node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
       - name: install dependencies
-        run: npm ci
+        run: pnpm install
       - name: lint
-        run: npm run lint:ci
+        run: pnpm run lint:ci
       - name: test
-        run: npm test
+        run: pnpm test
       - uses: codecov/codecov-action@v2.1.0
