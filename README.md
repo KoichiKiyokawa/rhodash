@@ -15,14 +15,13 @@
 - ⚡️ Lightweight
 - 💪 Typescript first(written in TypeScript and suitable for TypeScript users)
 - 🍃 Tree shakable
-
 - 📝 JSDoc available (easy to use).
 
 ![image](https://user-images.githubusercontent.com/40315079/135570757-ac335439-f7a5-4525-9d2b-e30d7990887f.png)
 
 - 🗺️ Sourcemap and declarationMap is available (You can jump to the TS file. Easy to debug).
 
-https://user-images.githubusercontent.com/40315079/151917936-49cc6244-fdac-4f4f-8be4-37f3a806274a.mp4
+![jump-to-ts-file](https://user-images.githubusercontent.com/40315079/151918966-01c74eb4-c1bb-45bd-83d6-1c82b6a8e3b1.gif)
 
 ## Install
 
