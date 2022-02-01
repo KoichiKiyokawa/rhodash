@@ -19,8 +19,8 @@
   "scripts": {
     "prepare": "husky install",
     "build": "vite build && tsc && zx scripts/write_banner.ts",
-    "lint": "prettier --write . --ignore-path .gitignore && eslint --fix . --ignore-path .gitignore",
-    "lint:ci": "prettier --check . --ignore-path .gitignore && eslint . --ignore-path .gitignore",
+    "lint": "prettier --write . && eslint --fix . --ignore-path .gitignore",
+    "lint:ci": "prettier --check . && eslint . --ignore-path .gitignore",
     "test": "jest --coverage",
     "new_version": "zx scripts/new_version.ts",
     "run-ts": "ts-node -O '{\"module\":\"commonjs\"}'"
@@ -48,9 +48,9 @@
     "zx": "4.3.0"
   },
   "volta": {
-    "node": "16.3.0",
-    "npm": "7.18.1"
+    "node": "16.3.0"
   },
+  "packageManager": "pnpm@6.29.1",
   "lint-staged": {
     "**/*.{ts}": [
       "eslint --fix",

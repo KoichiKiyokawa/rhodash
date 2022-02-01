@@ -14,7 +14,7 @@ import 'zx/globals'
   const pkg = JSON.parse((await fs.readFile('package.json')).toString())
   pkg.version = newVersion
   await fs.writeFile('package.json', JSON.stringify(pkg))
-  await $`npx prettier --write package.json`
+  await $`pnpx prettier --write package.json`
 
   // update readme
   const readmeRes = await fs.readFile('README.md')
@@ -27,13 +27,13 @@ import 'zx/globals'
   await fs.writeFile('README.md', newReadme)
 
   // git tag
-  await $`npm install`
-  await $`npm run build`
+  await $`pnpm install`
+  await $`pnpm run build`
   await $`git add -A`
   await $`git commit -m "v${newVersion}"`
   await $`git tag "v${newVersion}" HEAD -f`
 
   console.log(
-    `push by below command:\n ${chalk.green('$ git push -u origin HEAD --tags && npm publish')}`
+    `push by below command:\n ${chalk.green('$ git push -u origin HEAD --tags && pnpm publish')}`
   )
 })()
