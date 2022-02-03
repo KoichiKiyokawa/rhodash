@@ -15,6 +15,9 @@ describe('default use case', () => {
     it(`objectSet({}, 'a.b.0c', 1) is { a: { b: { "0c": 1 } } }`, () => {
       expect(objectSet({}, 'a.b.0c', 1)).toEqual({ a: { b: { '0c': 1 } } })
     })
+    it(`objectSet({}, 'a.b.0.c', 1) is { a: { b: [{ c: 1 }] } }`, () => {
+      expect(objectSet({}, 'a.b.0.c', 1)).toEqual({ a: { b: [{ c: 1 }] } })
+    })
 
     it(`objectSet([], '0', 1) is [1]`, () => {
       expect(objectSet([], '0', 1)).toEqual([1])
