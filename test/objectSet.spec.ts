@@ -3,6 +3,9 @@ import { objectSet } from '../src/index'
 
 describe('default use case', () => {
   describe('assign to an empty object or array', () => {
+    it(`objectSet({}, 'a.b.c', 1) is { a: { b: { c: 1 } } }`, () => {
+      expect(objectSet({}, 'a.b.c[0]', 1)).toEqual({ a: { b: { c: [1] } } })
+    })
     it(`objectSet({}, 'a.b.c[0]', 1) is { a: { b: { c: [1] } } }`, () => {
       expect(objectSet({}, 'a.b.c[0]', 1)).toEqual({ a: { b: { c: [1] } } })
     })
@@ -33,6 +36,9 @@ describe('default use case', () => {
     })
     it(`objectSet({ a: 1 }, 'a.b', 2) is { a: { b: 2 } }`, () => {
       expect(objectSet({ a: 1 }, 'a.b', 2)).toEqual({ a: { b: 2 } })
+    })
+    it(`objectSet({ a: 1 }, 'a.0', 2) is { a: [2] }`, () => {
+      expect(objectSet({ a: 1 }, 'a.0', 2)).toEqual({ a: [2] })
     })
     it(`objectSet({ a: [{ b: 1 }] }, 'a.0.b.c', 2) is { a: [{ b: { c: 2 } }] }`, () => {
       expect(objectSet({ a: [{ b: 1 }] }, 'a.0.b.c', 2)).toEqual({ a: [{ b: { c: 2 } }] })
