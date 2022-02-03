@@ -33,18 +33,27 @@ describe('start = end', () => {
 })
 
 describe('edge case', () => {
-  it('range(1, 5, 0) is [1, 1, 1, 1]', () => {
-    const result = range(1, 5, 0)
-    expect(result).toEqual([1, 1, 1, 1])
+  it('range(1, 5, 0) throws an error', () => {
+    expect(() => range(1, 5, 0)).toThrowError(/^step cannot be zero$/)
   })
 
-  it('range(5, 1, 0) is [5, 5, 5, 5]', () => {
-    const result = range(5, 1, 0)
-    expect(result).toEqual([5, 5, 5, 5])
+  it('range(5, 1, 0) throws an error', () => {
+    expect(() => range(5, 1, 0)).toThrowError(/^step cannot be zero$/)
   })
 
-  it('range(5, 5, 0) is []', () => {
-    const result = range(5, 5, 0)
-    expect(result).toEqual([])
+  it('range(5, 5, 0) throws an error', () => {
+    expect(() => range(5, 5, 0)).toThrowError(/^step cannot be zero$/)
+  })
+
+  it('range(null, 10, 1) throws an error', () => {
+    expect(() => range(null, 10, 1)).toThrowError(/^start must be a number$/)
+  })
+
+  it('range(1, null, 1) throws an error', () => {
+    expect(() => range(1, null, 1)).toThrowError(/^end must be a number$/)
+  })
+
+  it('range(1, 10, null) throws an error', () => {
+    expect(() => range(1, 10, null)).toThrowError(/^step must be a number$/)
   })
 })
