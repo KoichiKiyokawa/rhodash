@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest'
 import { chunk } from '../src/index'
 
 describe('for array of 1 to 5 ', () => {

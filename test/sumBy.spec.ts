@@ -1,3 +1,4 @@
+import { describe, expect, it } from 'vitest'
 import { sumBy } from '../src/index'
 
 describe('default use case (callback)', () => {

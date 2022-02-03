@@ -14,7 +14,7 @@ export function range(start: number, end?: number, step?: number): number[] {
 
   if (step === 0) return Array(Math.abs(end - start)).fill(start)
 
-  step ??= start < end ? 1 : -1
+  if (step === undefined) step = start < end ? 1 : -1
 
   const result = []
   for (let i = start; start < end ? i < end : i > end; i += step) result.push(i)
