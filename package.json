@@ -17,6 +17,7 @@
     "url": "https://github.com/KoichiKiyokawa/rhodash"
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "build": "vite build && tsc && zx scripts/write_banner.ts",
     "lint": "prettier --write . && eslint --fix . --ignore-path .gitignore",
