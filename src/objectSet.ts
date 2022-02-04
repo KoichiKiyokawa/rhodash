@@ -16,21 +16,18 @@
 export function objectSet<T = any, R = any>(obj: T, path: string, value: unknown): R {
   const keys = path.split(/\[|\]|\./).filter(Boolean)
   let current: any = obj
-  for (let i = 0; i < keys.length; i++) {
-    const key = isEmptyQuote(keys[i]) ? '' : keys[i]
-    if (i === keys.length - 1) {
-      // last key
-      current[key] = value
-      continue
-    }
-
+  for (let i = 0; i < keys.length - 1; i++) {
+    const key = normalizeKey(keys[i])
     // `!isObjectOrArrayLike(current[key])` is to merge objects like: objectSet({ a: 1 }, 'a.b', 2) eq { a: { b: 2 } }
     if (current[key] === undefined || !isObjectOrArrayLike(current[key])) {
       current[key] = isNumberString(keys[i + 1]) ? [] : {}
     }
-
     current = current[key]
   }
+
+  const lastKey = normalizeKey(keys[keys.length - 1])
+  if (lastKey !== undefined) current[lastKey] = value
+
   return obj as unknown as R
 }
 
@@ -38,8 +35,8 @@ function isNumberString(str: string): boolean {
   return /^\d+$/.test(str)
 }
 
-function isEmptyQuote(str: string): boolean {
-  return str === '""' || str === "''"
+function normalizeKey(key: string): string {
+  return key === '""' || key === "''" ? '' : key
 }
 
 function isObjectOrArrayLike(obj: unknown): boolean {
