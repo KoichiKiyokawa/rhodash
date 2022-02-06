@@ -33,13 +33,27 @@ describe('start = end', () => {
 })
 
 describe('edge case', () => {
-  it('toRange(1, 5, 0) is [1, 1, 1, 1, 1]', () => {
-    const result = toRange(1, 5, 0)
-    expect(result).toEqual([1, 1, 1, 1, 1])
+  it('toRange(1, 5, 0) throws an error', () => {
+    expect(() => toRange(1, 5, 0)).toThrowError(/^step cannot be zero$/)
   })
 
-  it('toRange(5, 1, 0) is [5, 5, 5, 5, 5]', () => {
-    const result = toRange(5, 1, 0)
-    expect(result).toEqual([5, 5, 5, 5, 5])
+  it('toRange(5, 1, 0) throws an error', () => {
+    expect(() => toRange(5, 1, 0)).toThrowError(/^step cannot be zero$/)
+  })
+
+  it('toRange(5, 5, 0) throws an error', () => {
+    expect(() => toRange(5, 5, 0)).toThrowError(/^step cannot be zero$/)
+  })
+
+  it('toRange(null, 10, 1) throws an error', () => {
+    expect(() => toRange(null, 10, 1)).toThrowError(/^start must be a number$/)
+  })
+
+  it('toRange(1, null, 1) throws an error', () => {
+    expect(() => toRange(1, null, 1)).toThrowError(/^end must be a number$/)
+  })
+
+  it('toRange(1, 10, null) throws an error', () => {
+    expect(() => toRange(1, 10, null)).toThrowError(/^step must be a number$/)
   })
 })
