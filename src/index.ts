@@ -1,4 +1,5 @@
 export { arrayDifference } from './arrayDifference'
+export { cloneDeep } from './cloneDeep'
 export { chunk } from './chunk'
 export { countBy } from './countBy'
 export { delay } from './delay'
