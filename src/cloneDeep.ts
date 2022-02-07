@@ -17,7 +17,7 @@ export function cloneDeep<T>(value: T): T {
   }
   if (value instanceof Set) {
     const copied = new Set()
-    for (const [, v] of value.entries()) copied.add(cloneDeep(v))
+    for (const v of value.values()) copied.add(cloneDeep(v))
     return copied as unknown as T
   }
   if (typeof value === 'object') {
