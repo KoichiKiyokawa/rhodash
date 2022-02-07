@@ -1,4 +1,9 @@
 /**
+ * You cannot clone the followings:
+ * - function
+ * - Symbol
+ * - WeakMap
+ * - WeakSet
  * @param value value to clone
  * @returns cloned value
  * @example
