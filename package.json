@@ -48,7 +48,7 @@
     "zx": "4.3.0"
   },
   "volta": {
-    "node": "16.3.0"
+    "node": "16.14.0"
   },
   "packageManager": "pnpm@6.29.1",
   "lint-staged": {
