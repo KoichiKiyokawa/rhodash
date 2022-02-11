@@ -16,6 +16,13 @@
     "type": "git",
     "url": "https://github.com/KoichiKiyokawa/rhodash"
   },
+  "keywords": [
+    "lodash",
+    "utility-library"
+  ],
+  "author": "K.Kiyokawa",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
@@ -23,15 +30,9 @@
     "lint": "prettier --write . && eslint --fix . --ignore-path .gitignore",
     "lint:ci": "prettier --check . && eslint . --ignore-path .gitignore",
     "test": "vitest --run --coverage",
-    "new_version": "zx scripts/new_version.ts",
+    "new_version": "node --loader ts-node/esm scripts/new_version.ts",
     "run-ts": "ts-node -O '{\"module\":\"commonjs\"}'"
   },
-  "keywords": [
-    "lodash",
-    "utility-library"
-  ],
-  "author": "K.Kiyokawa",
-  "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.10.2",
     "@typescript-eslint/parser": "5.10.2",
