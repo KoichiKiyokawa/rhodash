@@ -53,12 +53,10 @@
   "packageManager": "pnpm@6.30.1",
   "lint-staged": {
     "**/*.{ts}": [
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ],
     "**/*.{js,ts,md,json,yml}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   }
 }
