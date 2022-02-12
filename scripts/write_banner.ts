@@ -1,7 +1,6 @@
 import 'zx/globals'
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const pkg = require('../package.json')
+const pkg = await fs.readJson('package.json')
 const moduleName = pkg.name.replace(/^@.*\//, '')
 
 // for license
@@ -15,7 +14,5 @@ const banner = `\
 
 const browserBundlePath = 'dist/index.iife.js'
 
-;(async () => {
-  const browserBundle = await fs.readFile(browserBundlePath)
-  await fs.writeFile(browserBundlePath, banner + browserBundle)
-})()
+const browserBundle = await fs.readFile(browserBundlePath)
+await fs.writeFile(browserBundlePath, banner + browserBundle)
