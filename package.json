@@ -22,7 +22,6 @@
   ],
   "author": "K.Kiyokawa",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
