@@ -7,7 +7,7 @@ const moduleName = pkg.name.replace(/^@.*\//, '')
 const banner = `\
 /**
  * @license
- * ${moduleName}.js v${pkg.version}
+ * ${moduleName} v${pkg.version}
  * Released under the ${pkg.license} License.
  */
 `
