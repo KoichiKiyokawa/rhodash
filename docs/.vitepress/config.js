@@ -1,9 +1,11 @@
+const pkg = require('../../package.json')
+
 module.exports = {
   title: 'rhodash',
-  description: 'Just playing around.',
+  description: pkg.description,
   themeConfig: {
     repo: 'KoichiKiyokawa/rhodash',
-    docsDir: 'web-document/docs',
+    docsDir: 'docs',
     docsBranch: 'main',
 
     editLinks: true,

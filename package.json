@@ -22,7 +22,6 @@
   ],
   "author": "K.Kiyokawa",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
@@ -30,7 +29,10 @@
     "lint": "prettier --write . && eslint --fix . --ignore-path .gitignore",
     "lint:ci": "prettier --check . && eslint . --ignore-path .gitignore",
     "test": "vitest --run --coverage",
-    "new_version": "esmo scripts/new_version.ts"
+    "new_version": "esmo scripts/new_version.ts",
+    "doc:dev": "vitepress dev docs",
+    "doc:build": "vitepress build docs",
+    "doc:serve": "vitepress serve docs"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.11.0",
@@ -44,6 +46,7 @@
     "prettier": "2.5.1",
     "typescript": "4.5.5",
     "vite": "2.8.1",
+    "vitepress": "0.22.0",
     "vitest": "0.3.2",
     "zx": "5.0.0"
   },
