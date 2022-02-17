@@ -13,7 +13,7 @@ specifiers:
   typescript: 4.5.5
   vite: 2.8.3
   vitepress: 0.22.2
-  vitest: 0.3.5
+  vitest: 0.3.6
   zx: 5.1.0
 
 devDependencies:
@@ -29,7 +29,7 @@ devDependencies:
   typescript: 4.5.5
   vite: 2.8.3
   vitepress: 0.22.2
-  vitest: 0.3.5_c8@7.11.0
+  vitest: 0.3.6_c8@7.11.0
   zx: 5.1.0
 
 packages:
@@ -2139,8 +2139,8 @@ packages:
     resolution: {integrity: sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=}
     dev: true
 
-  /tinypool/0.1.1:
-    resolution: {integrity: sha512-sW2fQZ2BRb/GX5v55NkHiTrbMLx0eX0xNpP+VGhOe2f7Oo04+LeClDyM19zCE/WCy7jJ8kzIJ0Ojrxj3UhN9Sg==}
+  /tinypool/0.1.2:
+    resolution: {integrity: sha512-fvtYGXoui2RpeMILfkvGIgOVkzJEGediv8UJt7TxdAOY8pnvUkFg/fkvqTfXG9Acc9S17Cnn1S4osDc2164guA==}
     engines: {node: '>=14.0.0'}
     dev: true
 
@@ -2271,8 +2271,8 @@ packages:
       - stylus
     dev: true
 
-  /vitest/0.3.5_c8@7.11.0:
-    resolution: {integrity: sha512-IIYupM5RAN9H44F5k/Yz0DEORHPJC8qwdi6sQmcdjrxqfxIHypq9PoutQQrW1WKW9O9yUNYG5VGHeHlqAXa9wg==}
+  /vitest/0.3.6_c8@7.11.0:
+    resolution: {integrity: sha512-EzlAmGHDh/sQhzKeqDtEae6nlFM5pJKJefj5P2eUUmg6DcXL2Xj365M7eN29P2tMofzs+qZD/LW+d2wopfNl0g==}
     engines: {node: '>=14.14.0'}
     hasBin: true
     peerDependencies:
@@ -2295,7 +2295,7 @@ packages:
       c8: 7.11.0
       chai: 4.3.6
       local-pkg: 0.4.1
-      tinypool: 0.1.1
+      tinypool: 0.1.2
       tinyspy: 0.2.10
       vite: 2.8.3
     transitivePeerDependencies:
