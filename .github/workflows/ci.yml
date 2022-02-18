@@ -6,13 +6,11 @@ on:
       - main
     paths-ignore:
       - '*.md'
-      - 'web-document/**'
   pull_request:
     branches:
       - main
     paths-ignore:
       - '*.md'
-      - 'web-document/**'
 
 jobs:
   build:
