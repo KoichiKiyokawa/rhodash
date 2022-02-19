@@ -13,7 +13,7 @@ specifiers:
   typescript: 4.5.5
   vite: 2.8.4
   vitepress: 0.22.2
-  vitest: 0.4.1
+  vitest: 0.4.2
   zx: 5.1.0
 
 devDependencies:
@@ -29,7 +29,7 @@ devDependencies:
   typescript: 4.5.5
   vite: 2.8.4
   vitepress: 0.22.2
-  vitest: 0.4.1_c8@7.11.0
+  vitest: 0.4.2_c8@7.11.0
   zx: 5.1.0
 
 packages:
@@ -2271,8 +2271,8 @@ packages:
       - stylus
     dev: true
 
-  /vitest/0.4.1_c8@7.11.0:
-    resolution: {integrity: sha512-zDqUYOUoyBiC0DgWw9RyQqhUktaFA+hJmrZskYrnVslSuZiuzI7SYj2GmXGwHvSx1FfdWI5lRFN9IWB7Ug5cYg==}
+  /vitest/0.4.2_c8@7.11.0:
+    resolution: {integrity: sha512-f5kclFhkCuIKQ96lsAveESeyfTf9ihT79ZQcLDNCoJbMDNTHQdSMnU7aq9KAeOmZVh4la3NANKWECWM7HfP1ng==}
     engines: {node: '>=14.14.0'}
     hasBin: true
     peerDependencies:
