@@ -82,5 +82,5 @@ rambda is "faster and smaller alternative to Ramda". It includes type definittio
 ## Run tests
 
 ```sh
-npm run test
+pnpm run test
 ```
