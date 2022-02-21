@@ -6,15 +6,14 @@ const error = (msg: string) => {
 }
 
 // prettier-ignore
-const [/* node */, /* zx */, /* file */, newVersion, ...others] = process.argv
+const [/* node */, /* new_version.ts */, newVersion, ...others] = process.argv
 if (others.length > 0) error('too much args')
 if (newVersion == null) error('please input new version. e.g. 1.0.0')
 
 // update package.json
-const pkg = await fs.readJSON('package.json')
+const pkg = fs.readJSONSync('package.json')
 pkg.version = newVersion
-await fs.writeFile('package.json', JSON.stringify(pkg))
-await $`pnpx prettier --write package.json`
+fs.writeJSONSync('package.json', pkg)
 
 // update readme
 const readmeRes = await fs.readFile('README.md')
