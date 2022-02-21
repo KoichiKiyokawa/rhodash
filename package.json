@@ -50,9 +50,6 @@
     "vitest": "0.4.2",
     "zx": "5.1.0"
   },
-  "volta": {
-    "node": "16.14.0"
-  },
   "packageManager": "pnpm@6.31.0",
   "lint-staged": {
     "**/*.{ts}": [
