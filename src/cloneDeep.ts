@@ -25,7 +25,7 @@ export function cloneDeep<T>(value: T): T {
     for (const v of value.values()) copied.add(cloneDeep(v))
     return copied as unknown as T
   }
-  // TODO: buffer
+  if (value instanceof Buffer) return Buffer.from(value) as unknown as T
   if (typeof value === 'object') {
     const copied = {} as T
     for (const key in value) copied[key] = cloneDeep(value[key])
