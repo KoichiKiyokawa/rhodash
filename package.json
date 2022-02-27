@@ -29,7 +29,7 @@
     "lint": "prettier --write . && eslint --fix . --ignore-path .gitignore",
     "lint:ci": "prettier --check . && eslint . --ignore-path .gitignore",
     "test": "vitest --run --coverage",
-    "new_version": "esmo scripts/new_version.ts",
+    "release": "esmo scripts/release.ts",
     "doc:dev": "vitepress dev docs",
     "doc:build": "vitepress build docs",
     "doc:serve": "vitepress serve docs"
