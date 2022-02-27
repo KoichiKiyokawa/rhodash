@@ -51,7 +51,7 @@
     "vitest": "0.5.4",
     "zx": "5.1.0"
   },
-  "packageManager": "pnpm@6.32.1",
+  "packageManager": "pnpm@6.32.2",
   "lint-staged": {
     "**/*.{ts}": [
       "eslint --fix"
