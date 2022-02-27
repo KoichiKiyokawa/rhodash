@@ -35,6 +35,7 @@
     "doc:serve": "vitepress serve docs"
   },
   "devDependencies": {
+    "@jsdevtools/version-bump-prompt": "^6.1.0",
     "@typescript-eslint/eslint-plugin": "5.12.1",
     "@typescript-eslint/parser": "5.12.1",
     "c8": "7.11.0",
