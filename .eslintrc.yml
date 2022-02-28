@@ -7,5 +7,7 @@ env:
 extends:
   - 'eslint:recommended'
   - 'plugin:@typescript-eslint/recommended'
+ignorePatterns:
+  - scripts/**
 rules:
   '@typescript-eslint/no-explicit-any': 'off'

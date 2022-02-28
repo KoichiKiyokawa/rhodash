@@ -25,11 +25,11 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
-    "build": "vite build && tsc && esmo scripts/write_banner.ts",
+    "build": "vite build && tsc && zx scripts/write_banner.mjs",
     "lint": "prettier --write . && eslint --fix . --ignore-path .gitignore",
     "lint:ci": "prettier --check . && eslint . --ignore-path .gitignore",
     "test": "vitest --run --coverage",
-    "release": "esmo scripts/release.ts",
+    "release": "zx scripts/release.mjs",
     "doc:dev": "vitepress dev docs",
     "doc:build": "vitepress build docs",
     "doc:serve": "vitepress serve docs"
@@ -41,7 +41,6 @@
     "c8": "7.11.0",
     "eslint": "8.10.0",
     "eslint-config-prettier": "8.4.0",
-    "esno": "0.14.1",
     "husky": "7.0.4",
     "lint-staged": "12.3.4",
     "prettier": "2.5.1",
