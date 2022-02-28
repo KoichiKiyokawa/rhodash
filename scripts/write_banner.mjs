@@ -1,4 +1,5 @@
-#!/usr/bin/env node
+#!/usr/bin/env zx
+
 import 'zx/globals'
 
 const pkg = fs.readJsonSync('package.json')

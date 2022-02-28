@@ -1,4 +1,5 @@
-#!/usr/bin/env node
+#!/usr/bin/env zx
+
 await $`pnpm bump README.md package.json --commit --tag`
 await $`pnpm run build`
 console.log('----------')
