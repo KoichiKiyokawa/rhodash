@@ -1,6 +1,8 @@
+#!/usr/bin/env zx
+
 import 'zx/globals'
 
-const pkg = await fs.readJson('package.json')
+const pkg = fs.readJsonSync('package.json')
 const moduleName = pkg.name.replace(/^@.*\//, '')
 
 // for license
@@ -12,7 +14,6 @@ const banner = `\
  */
 `
 
+// write banner to top of the browser bundle
 const browserBundlePath = 'dist/index.iife.js'
-
-const browserBundle = await fs.readFile(browserBundlePath)
-await fs.writeFile(browserBundlePath, banner + browserBundle)
+fs.writeFileSync(browserBundlePath, banner + fs.readFileSync(browserBundlePath))
