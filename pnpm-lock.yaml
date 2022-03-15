@@ -14,7 +14,7 @@ specifiers:
   vite: 2.8.5
   vitepress: 0.22.3
   vitest: 0.5.4
-  zx: 5.3.0
+  zx: 6.0.1
 
 devDependencies:
   '@jsdevtools/version-bump-prompt': 6.1.0
@@ -30,7 +30,7 @@ devDependencies:
   vite: 2.8.5
   vitepress: 0.22.3
   vitest: 0.5.4_c8@7.11.0
-  zx: 5.3.0
+  zx: 6.0.1
 
 packages:
 
@@ -2524,8 +2524,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /zx/5.3.0:
-    resolution: {integrity: sha512-woT7luj41wcHk9D/pGEJrENl5/tQLzVl5WPp+nQ+2h8vWQCTxDVGUm5TYEi5lqlY/F+13xCr/hl1Na6+JD+Edg==}
+  /zx/6.0.1:
+    resolution: {integrity: sha512-EOCZ7dB6a31ZnN48uTp80RamhAp8o71M1WmKXZ3sHKUojMlsH5VvLigubp4N76treuJM5Ar7pqMjHRTnu68qWw==}
     engines: {node: '>= 16.0.0'}
     hasBin: true
     dependencies:
