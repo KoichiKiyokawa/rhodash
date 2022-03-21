@@ -14,7 +14,7 @@ specifiers:
   vite: 2.8.5
   vitepress: 0.22.3
   vitest: 0.5.4
-  zx: 6.0.1
+  zx: 6.0.6
 
 devDependencies:
   '@jsdevtools/version-bump-prompt': 6.1.0
@@ -30,7 +30,7 @@ devDependencies:
   vite: 2.8.5
   vitepress: 0.22.3
   vitest: 0.5.4_c8@7.11.0
-  zx: 6.0.1
+  zx: 6.0.6
 
 packages:
 
@@ -298,6 +298,10 @@ packages:
 
   /@types/node/17.0.17:
     resolution: {integrity: sha512-e8PUNQy1HgJGV3iU/Bp2+D/DXh3PYeyli8LgIwsQcs1Ar1LoaWHSIT6Rw+H2rNJmiq6SNWiDytfx8+gYj7wDHw==}
+    dev: true
+
+  /@types/which/2.0.1:
+    resolution: {integrity: sha512-Jjakcv8Roqtio6w1gr0D7y6twbhx6gGgFGF5BLwajPpnOIOxFkakFhCq+LmyyeAz7BX6ULrjBOxdKaCDy+4+dQ==}
     dev: true
 
   /@typescript-eslint/eslint-plugin/5.15.0_f2c49ce7d0e93ebcfdb4b7d25b131b28:
@@ -2531,14 +2535,15 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /zx/6.0.1:
-    resolution: {integrity: sha512-EOCZ7dB6a31ZnN48uTp80RamhAp8o71M1WmKXZ3sHKUojMlsH5VvLigubp4N76treuJM5Ar7pqMjHRTnu68qWw==}
+  /zx/6.0.6:
+    resolution: {integrity: sha512-PDkf1B2cloeBmDNdYJIPLLNlBZVelXZtlXKZg0oMkoX4iLoufFfm//1rW+Uip+LBO4i3jIcmQx9wZZhOSqC+ng==}
     engines: {node: '>= 16.0.0'}
     hasBin: true
     dependencies:
       '@types/fs-extra': 9.0.13
       '@types/minimist': 1.2.2
       '@types/node': 17.0.17
+      '@types/which': 2.0.1
       chalk: 5.0.1
       fs-extra: 10.0.1
       globby: 13.1.1
