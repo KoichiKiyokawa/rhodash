@@ -47,7 +47,7 @@
     "vite": "2.9.12",
     "vitepress": "0.22.4",
     "vitest": "0.15.1",
-    "zx": "6.2.5"
+    "zx": "7.0.1"
   },
   "packageManager": "pnpm@6.32.23",
   "lint-staged": {
