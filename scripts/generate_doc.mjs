@@ -1,11 +1,19 @@
 import { fs, globby } from 'zx'
 
+// generate functions doc
 const functionsNames = globby
   .globbySync('src/*.ts', { ignore: ['src/index.ts'] })
   .map((file) => file.replace(/^src\/(.+)\.ts/, '$1'))
 functionsNames.forEach((fn) => {
   fs.writeFileSync(`docs/${fn}.md`, getDocumentFromFunctionName(fn))
 })
+
+// generate comparison table
+const readme = fs.readFileSync('README.md')
+const comparisonTable = String(readme).match(/(#+ Comparison[\s\S]+)/)?.[1]
+fs.writeFileSync('docs/parts/comparison.md', comparisonTable)
+
+$`pnpm prettier --write docs`
 
 /**
  * @param {string} name e.g. 'chunk'

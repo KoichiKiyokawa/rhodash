@@ -10,3 +10,5 @@ Lodash is huge. It is not suitable for frontend development.
 npm install rhodash
 # or yarn add rhodash
 ```
+
+<!--@include: ./parts/comparison.md-->
