@@ -6,10 +6,7 @@
  * - WeakSet
  * @param value value to clone
  * @returns cloned value
- * @example
- * ```
- * cloneDeep({ a: 0, b: [1, 2, 3] }) // => { a: 0, b: [1, 2, 3] }
- * ```
+ * @example cloneDeep({ a: 0, b: [1, 2, 3] }) // => { a: 0, b: [1, 2, 3] }
  */
 export function cloneDeep<T>(value: T): T {
   if (!value) return value
