@@ -10,7 +10,17 @@ export default defineConfig({
       entry: 'src/index.ts',
       name: pkg.name,
       formats: ['cjs', 'es', 'iife'],
-      fileName: (format) => `index.${format}.js`,
+      fileName: (format) => {
+        switch (format) {
+          case 'cjs':
+            return 'index.cjs'
+          case 'es':
+            return 'index.js'
+          case 'iife':
+            return 'index.min.js'
+        }
+        return ''
+      },
     },
   },
   test: {

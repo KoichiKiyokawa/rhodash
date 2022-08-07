@@ -3,9 +3,9 @@
   "version": "2.1.0",
   "description": "A deadly simple alternative to lodash",
   "types": "dist/index.d.ts",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.es.js",
-  "browser": "dist/index.iife.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "browser": "dist/index.min.js",
   "sideEffects": false,
   "files": [
     "dist",
@@ -15,6 +15,7 @@
     "type": "git",
     "url": "https://github.com/KoichiKiyokawa/rhodash"
   },
+  "homepage": "https://rhodash.vercel.app",
   "keywords": [
     "lodash",
     "utility-library"
@@ -22,7 +23,6 @@
   "author": "K.Kiyokawa",
   "license": "MIT",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "build": "vite build && tsc && zx scripts/write_banner.mjs",
     "lint": "prettier --write . && eslint --fix . --ignore-path .gitignore",
