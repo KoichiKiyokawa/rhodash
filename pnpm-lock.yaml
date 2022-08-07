@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@jsdevtools/version-bump-prompt': 6.1.0
+  '@types/node': 18.6.4
   '@typescript-eslint/eslint-plugin': 5.32.0
   '@typescript-eslint/parser': 5.32.0
   c8: 7.12.0
@@ -18,6 +19,7 @@ specifiers:
 
 devDependencies:
   '@jsdevtools/version-bump-prompt': 6.1.0
+  '@types/node': 18.6.4
   '@typescript-eslint/eslint-plugin': 5.32.0_iosr3hrei2tubxveewluhu5lhy
   '@typescript-eslint/parser': 5.32.0_qugx7qdu5zevzvxaiqyxfiwquq
   c8: 7.12.0

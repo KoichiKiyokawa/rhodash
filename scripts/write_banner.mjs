@@ -15,5 +15,5 @@ const banner = `\
 `
 
 // write banner to top of the browser bundle
-const browserBundlePath = 'dist/index.iife.js'
+const browserBundlePath = 'dist/index.min.js'
 fs.writeFileSync(browserBundlePath, banner + fs.readFileSync(browserBundlePath))
