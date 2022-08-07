@@ -2,6 +2,8 @@
 
 # last
 
+Return the last element of the given array.
+
 ## Example
 
 ```ts

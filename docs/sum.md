@@ -2,6 +2,8 @@
 
 # sum
 
+Add up the given array of numbers.
+
 ## Example
 
 ```ts

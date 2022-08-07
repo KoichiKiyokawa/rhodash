@@ -62,7 +62,7 @@ function parseCommentFromSource(source) {
     .map((line) => line.replace(/^ \* /, ''))
     .join('\n')
 
-  const description = comment.match(/([\s\S]+?)\n@param/)?.[1] ?? ''
+  const description = comment.match(/([\s\S]+?)\n(@param|@example)/)?.[1] ?? ''
   const examples = comment
     .match(/@example[ \n][\s\S]+?(@example|$)/g)
     .map((example) => example.replace(/@example[ \n]/, ''))

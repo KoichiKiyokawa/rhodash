@@ -2,6 +2,8 @@
 
 # countBy
 
+Count the number of elements that match a given condition.
+
 ## Example
 
 ```ts

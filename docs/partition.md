@@ -2,6 +2,8 @@
 
 # partition
 
+Split the given array into those that match the conditions and those that don't.
+
 ## Example
 
 ```ts

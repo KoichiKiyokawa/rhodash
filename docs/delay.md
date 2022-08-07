@@ -2,6 +2,8 @@
 
 # delay
 
+Return a Promise to be resolved in the given millisecond.
+
 ## Example
 
 ```ts

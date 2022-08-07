@@ -2,6 +2,8 @@
 
 # zipObject
 
+Creates an object from array of keys and array of values.
+
 ## Example
 
 ```ts

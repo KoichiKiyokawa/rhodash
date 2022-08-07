@@ -2,6 +2,8 @@
 
 # uniq
 
+Create an array with duplicate elements removed.
+
 ## Example
 
 ```ts

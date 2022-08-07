@@ -2,6 +2,8 @@
 
 # zip
 
+Creates an array of grouped elements.
+
 ## Example
 
 ```ts

@@ -2,6 +2,8 @@
 
 # toRange
 
+Create an array of sequential numbers with end values.
+
 ## Example
 
 ```ts

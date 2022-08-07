@@ -2,6 +2,8 @@
 
 # groupBy
 
+Create an object consisting of keys created by applying predicate to the given array.
+
 ## Example
 
 ```ts

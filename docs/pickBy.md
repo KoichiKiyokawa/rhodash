@@ -2,6 +2,8 @@
 
 # pickBy
 
+Create an object with only the properties that match the conditions.
+
 ## Example
 
 ```ts

@@ -2,6 +2,8 @@
 
 # sumBy
 
+Add up the given array of numbers, using the given function or key.
+
 ## Example
 
 ```ts

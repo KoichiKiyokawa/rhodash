@@ -2,6 +2,8 @@
 
 # range
 
+Create an array of sequential numbers without end values.
+
 ## Example
 
 ```ts

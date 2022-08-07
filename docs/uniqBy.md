@@ -2,6 +2,8 @@
 
 # uniqBy
 
+Create an array by removing duplicate elements from the result of the given function.
+
 ## Example
 
 ```ts

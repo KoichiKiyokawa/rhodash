@@ -2,6 +2,8 @@
 
 # omit
 
+Create an object without the given properties.
+
 ## Example
 
 ```ts
