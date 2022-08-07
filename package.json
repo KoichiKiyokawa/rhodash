@@ -15,6 +15,7 @@
     "type": "git",
     "url": "https://github.com/KoichiKiyokawa/rhodash"
   },
+  "homepage": "https://rhodash.vercel.app",
   "keywords": [
     "lodash",
     "utility-library"
@@ -22,7 +23,6 @@
   "author": "K.Kiyokawa",
   "license": "MIT",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "build": "vite build && tsc && zx scripts/write_banner.mjs",
     "lint": "prettier --write . && eslint --fix . --ignore-path .gitignore",

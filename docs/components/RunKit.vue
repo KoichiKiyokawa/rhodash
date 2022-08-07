@@ -18,6 +18,7 @@ onMounted(() => {
   function setupRunKit() {
     const codeBlock = codeBlockContainer.value.querySelector('pre')
     const innerText = codeBlock.firstChild
+    // cf) https://runkit.com/docs/embed
     window.RunKit.createNotebook({
       element: codeBlock,
       nodeVersion: '16.x.x',
