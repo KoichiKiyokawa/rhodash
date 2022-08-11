@@ -8,7 +8,7 @@ Create an object with only the properties that match the conditions.
 
 ```ts
 pickBy({ a: 1, b: null, c: undefined, d: 'foo' }) // => { a: 1, d: 'foo' }
-@example
+pickBy({ a: 1, b: 2, c: 3, d: 4 }, (num) => num % 2 === 0) // => { b: 2, d: 4 }
 ```
 
 ## Link

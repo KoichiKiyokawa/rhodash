@@ -8,7 +8,7 @@ Add up the given array of numbers.
 
 ```ts
 sum([1, 2, 3]) // => 6
-@example
+sum([]) // => 0
 ```
 
 ## Link
