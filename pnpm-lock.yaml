@@ -5,7 +5,7 @@ specifiers:
   '@types/node': 18.7.13
   '@typescript-eslint/eslint-plugin': 5.35.1
   '@typescript-eslint/parser': 5.35.1
-  c8: 7.12.0
+  '@vitest/coverage-c8': 0.22.1
   eslint: 8.23.0
   eslint-config-prettier: 8.5.0
   husky: 8.0.1
@@ -22,7 +22,7 @@ devDependencies:
   '@types/node': 18.7.13
   '@typescript-eslint/eslint-plugin': 5.35.1_pfwtupu3r4wxmgbx6hj7gwmyuu
   '@typescript-eslint/parser': 5.35.1_yqf6kl63nyoq5megxukfnom5rm
-  c8: 7.12.0
+  '@vitest/coverage-c8': 0.22.1
   eslint: 8.23.0
   eslint-config-prettier: 8.5.0_eslint@8.23.0
   husky: 8.0.1
@@ -496,6 +496,24 @@ packages:
     dependencies:
       vite: 3.0.9
       vue: 3.2.37
+    dev: true
+
+  /@vitest/coverage-c8/0.22.1:
+    resolution: {integrity: sha512-KOOYpO7EGpaF+nD8GD+Y05D0JtZp12NUu6DdLXvBPqSOPo2HkZ7KNBtfR0rb6gOy3NLtGiWTYTzCwhajgb2HlA==}
+    dependencies:
+      c8: 7.12.0
+      vitest: 0.22.1
+    transitivePeerDependencies:
+      - '@edge-runtime/vm'
+      - '@vitest/browser'
+      - '@vitest/ui'
+      - happy-dom
+      - jsdom
+      - less
+      - sass
+      - stylus
+      - supports-color
+      - terser
     dev: true
 
   /@vue/compiler-core/3.2.37:
