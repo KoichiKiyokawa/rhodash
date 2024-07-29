@@ -37,7 +37,7 @@
   "devDependencies": {
     "@jsdevtools/version-bump-prompt": "6.1.0",
     "@types/node": "20.5.7",
-    "@typescript-eslint/eslint-plugin": "6.17.0",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "5.62.0",
     "@vitest/coverage-v8": "0.34.3",
     "eslint": "8.48.0",
