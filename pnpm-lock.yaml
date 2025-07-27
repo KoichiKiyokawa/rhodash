@@ -24,8 +24,8 @@ devDependencies:
     specifier: 8.48.0
     version: 8.48.0
   eslint-config-prettier:
-    specifier: 8.10.0
-    version: 8.10.0(eslint@8.48.0)
+    specifier: 10.1.8
+    version: 10.1.8(eslint@8.48.0)
   husky:
     specifier: 8.0.3
     version: 8.0.3
@@ -1458,8 +1458,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-prettier@8.10.0(eslint@8.48.0):
-    resolution: {integrity: sha512-SM8AMJdeQqRYT9O9zguiruQZaN7+z+E4eAP9oiLNGKMtomwaB1E9dcgUD6ZAn/eQAb52USbvezbiljfZUhbJcg==}
+  /eslint-config-prettier@10.1.8(eslint@8.48.0):
+    resolution: {integrity: sha512-82GZUjRS0p/jganf6q1rEO25VSoHH0hKPCTrgillPjdI/3bgBhAE1QzHrHTizjpRvy6pGAvKjDJtk2pF9NDq8w==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
